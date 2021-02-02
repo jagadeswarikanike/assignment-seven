@@ -11,7 +11,7 @@ div {
   padding: 30px;
 }
 
-@media screen and (orientation:portrait) {
+@media only screen and (orientation:portrait) {
   body {
       transform: rotate(-90deg);
       transform-origin: 50% 50%;
