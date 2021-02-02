@@ -39,6 +39,20 @@ div {
       transform-origin: 50% 50%;
   }
 }
+@media (max-width: 500px) and (orientation:portrait) {
+  body {
+      transform: rotate(-90deg);
+      transform-origin: 40% 80%;
+  }
+  html, body {
+  height: 100vh;
+  min-height: 100vw;
+  background-size: cover;
+  padding: 0;
+  background-position: absolute;
+  margin: 0;
+}
+}
 </style>
     <div>
       Some content here
