@@ -33,22 +33,23 @@ div {
   padding: 30px;
 }
 
-@media screen and (orientation:portrait) {
+@media only screen and (orientation:portrait) {
   body {
       transform: rotate(-90deg);
       transform-origin: 50% 50%;
   }
 }
-@media (max-width: 500px) and (orientation:portrait) {
+@media only screen and (max-width: 100px) and (orientation:portrait) {
   body {
       transform: rotate(-90deg);
-      transform-origin: 70% 70%;
+      transform-origin: 50% 50%;
   }
   html, body {
   height: 100vh;
   min-height: 100vw;
   background-size: cover;
   padding: 0;
+  background-repeat: no-repeat;
   background-position: absolute;
   margin: 0;
 }
